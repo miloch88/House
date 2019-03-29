@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+span {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+    width: 200px;
+    height: 50px;
+    background-color: chocolate;
+
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 3px;
+
+    cursor: pointer;
+}
+
+div {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+body div:nth-child(2) {
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+
+span:hover~div:nth-child(2) {
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    width: 423px;
+    height: 280px;
+    background-color: gainsboro;
+}
+
+body div:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    transition: 1s;
+}
+
+span:hover~div:nth-child(3) {
+    bottom: 50%;
+    left: 50%;
+
+    transform: translate(-50%, 3%) rotate(45deg);
+
+    width: 300px;
+    height: 300px;
+    background-color: red;
+
+    z-index: -1;
+}
+
+body div:nth-child(4) {
+    bottom: 0;
+    right: 0;
+    transition: 1s 0.5s;
+}
+
+span:hover~div:nth-child(4) {
+    bottom: 50%;
+    right: 50%;
+
+    transform: translate(200%, -110%);
+
+    width: 80px;
+    height: 150px;
+    background-color: gainsboro;
+    z-index: -2;
+}
+
+body div:nth-child(5) {
+    top: 0;
+    right: 0;
+    transition: 1s 0.5s;
+}
+
+span:hover~div:nth-child(5) {
+    top: 50%;
+    right: 50%;
+
+    transform: translate(50%, 16%);
+
+    width: 80px;
+    height: 120px;
+    background-color: firebrick;
+    z-index: 2;
+}
+
+body div:nth-child(6) {
+    top: 0;
+    left: 0;
+    transition: 1s 1s;
+}
+
+span:hover~div:nth-child(6) {
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-180%, -100%);
+
+    width: 100px;
+    height: 90px;
+    background-color: cadetblue;
+    z-index: 2;
+}
+
+body div:nth-child(7) {
+    top: 0;
+    right: 0;
+    transition: 1s 1s;
+}
+
+span:hover~div:nth-child(7) {
+    top: 50%;
+    right: 50%;
+
+    transform: translate(180%, -100%);
+
+    width: 100px;
+    height: 90px;
+    background-color: cadetblue;
+    z-index: 2;
+}
+
+body div:nth-child(8) {
+    top: 0;
+    right: 50%;
+    transition: 1s 1.5s;
+    z-index: -3;
+}
+
+span:hover~div:nth-child(8) {
+    right: 0;
+    width: 100%;
+    height: 50vh;
+
+    background-color: aliceblue;
+}
+
+body div:nth-child(9) {
+    bottom: 0;
+    right: 50%;
+    transition: 1s 1.5s;
+    z-index: -3;
+}
+
+span:hover~div:nth-child(9) {
+    right: 0;
+    width: 100%;
+    height: 50vh;
+
+    background-color: greenyellow;
+}
+
+body div:nth-child(10) {
+    top: 15%;
+    left: 15%;
+    transition: 1s 2s;
+    z-index: -2;
+}
+
+span:hover~div:nth-child(10) {
+   
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%; 
+    width: 150px;
+    height: 150px;
+
+    background-color: yellow;
+}
